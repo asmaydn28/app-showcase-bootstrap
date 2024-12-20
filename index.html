@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asım Aydın</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+    <!-- Navbar Bölümü -->
+    <nav class="navbar bg-white navbar-expand-lg fixed-top shadow">
+        <div class="container p-2">
+            <a href="#" class="navbar-brand fw-bold start">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>Menu</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a href="#fontawesome" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="#download" class="nav-link">Download</a>
+                    </li>    
+                    <li>
+                        <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-message" style="color: #ffffff;"></i>
+                            <span>Send Feedback</span> 
+                        </button>
+                    </li>    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- sendfeedback formu -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-start">
+                <h1 class="modal-title fs-5 text-white py-2" id="exampleModalLabel">Send Feedback</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="https://formspree.io/f/mjkvwvod" method="POST">
+                        <div class="form-floating mb-3">
+                            <input type="text" name="text" class="form-control" id="floatingInput" placeholder="Full Name">
+                            <label for="floatingInput">Full Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" name="tel" class="form-control" id="floatingInput" placeholder="Phone">
+                            <label for="floatingInput">Phone</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea style="height: 150px;" name="message" class="form-control" placeholder="Message" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 rounded-5">Submit</button>
+                    </form>  
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- -----------------------------------Showcase-------------------------------- -->
+
+    <header class="p-5">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-lg-6 col-12 align-items-center justify-content-center d-flex">
+                    <div class="text-lg-start text-center ">
+                        <div><h1 class="display-1">Showcase your app beautifully.</h1></div>
+                        <div><p class="fs-5 opacity-75">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p></div>
+                        <div  class="d-flex flex-lg-row justify-content-lg-start justify-content-center flex-column">
+                            <a href="#" class="p-2">
+                                <img src="Google_Play_Store_badge_EN.svg" alt="">
+                            </a>
+                            <a href="#" class="p-2">
+                                <img src="Available_on_the_App_Store_(black)_SVG.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 position-relative d-flex justify-content-center align-items-center py-5">
+
+                    <div class="daire carpi1 carpi2 rounded-circle d-none d-sm-block"></div>
+            
+                    <div class="mobile-phone">
+                      <img src="mobile-phone.png" alt="resim" class="img-fluid">
+                    </div>
+            
+                  </div>
+            </div>
+        </div>
+    </header>
+<!-- ---------------------------------------------THE NEXT WEB---------------------------------------------------------- -->
+    
+    <section class="p-3" id="section1">
+        <div class="container p-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col text-white text-center">
+                    <h1>"An intuitive solution to a common problem that we all face,
+                        wrapped up in a single app!"</h1>
+                        <img src="thenextweb.png" alt="tnw" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ---------------------------------------------font AWESOMELAR--------------------------------------------------- -->
+
+    <main class="p-5" id="fontawesome">
+        <div class="container p-5">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 position-relative d-flex justify-content-center align-items-center py-5 order-lg-1 order-2">
+
+                    <div class="daire2 carpi3 carpi4 rounded-circle d-none d-sm-block"></div>
+            
+                    <div class="mobile-phone2">
+                      <img src="mobile-phone.png" alt="resim" class="img-fluid">
+                    </div>
+            
+                  </div>
+
+                    <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center order-lg-2 order-1">
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6 text-center p-5">
+                                <i class="fa-solid fa-mobile fs-1" style="color: #B197FC;"></i>
+                                <h3>Device Mockups</h3>
+                                <p>Ready to use HTML/CSS device mockups, no Photoshop
+                                    required!</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-center p-5">
+                                <i class="fa-solid fa-camera fs-1" style="color: #B197FC;"></i>
+                                <h3>Flexible Use</h3>
+                                <p>Put an image, video, animation, or anything else in the
+                                    screen!</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-center p-5">
+                                <i class="fa-solid fa-gift fs-1" style="color: #B197FC;"></i>
+                                <h3>Free to Use</h3>
+                                <p>As always, this theme is free to download and use for any
+                                    purpose!</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-center p-5">
+                                <i class="fa-solid fa-check fs-1" style="color: #B197FC;"></i>
+                                <h3>Open Source</h3>
+                                <p>Since this theme is MIT licensed, you can use it
+                                    commercially!</p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </main>
+<!-- ------------------------------------büyük daire------------------------------------------------ -->
+
+    <section class="bg-light p-5">
+        <div class="container p-5">
+            <div class="row d-flex align-items-center justify-content-center">
+
+                <div class="col-lg-6 col-12">
+                    <h2 class="display-3">Enter a new age of web design</h2>
+                    <p class="fs-5">This section is perfect for featuring some
+                        information about your application, why it was built, the problem it solves, or anything else!
+                        There's plenty of space for text here, so don't worry about writing too much.</p>
+                </div>
+
+                <div class="col-lg-6 col-6">
+                    <img src="purple.jpg" alt="daire" class="img-fluid rounded-circle">
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- -----------------------------------ARAKA PLAN RESMİ---------------------------------------------- -->
+
+    <section class="bg-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex flex-column align-items-center justify-content-start arkaplan">
+                        <h2 class="text-white display-1 lh-1" style="white-space: nowrap;">
+                            Stop waiting.
+                            <br>
+                            Start building.
+                        </h2>
+                        <a href="https://startbootstrap.com/theme/new-age" class="btn btn-outline-light p-3 rounded-pill" style="white-space: nowrap;">Download For Free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------------------------------------GET THE APP NOW------------------------------------------ -->
+
+    <section class="bg-section2" id="download">
+        <div class="container p-5">
+            <div class="row p-3">
+                <div class="col d-flex flex-row flex-column align-items-center justify-content-center">
+                    <div class="p-2">
+                    <h2 class="text-white">Get the app now!</h2>
+                    </div>
+
+                    <div class="d-flex flex-column flex-lg-row">
+                    <a href="#" class="p-2">
+                        <img src="Google_Play_Store_badge_EN.svg" alt="">
+                    </a>
+                    <a href="#" class="p-2">
+                        <img src="Available_on_the_App_Store_(black)_SVG.svg" alt="">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------FOOTER---------------------------------------- -->
+
+    <footer class="bg-black p-5">
+        <div class="container">
+            <div class="row text-white-50">
+                <div class="col text-center ">
+                    <div class="p-2">
+                        © Asım Aydın 2024. All Rights Reserved.
+                    </div>
+                    <a href="#" class="text-white-50 footer">Privacy</a>
+                    <span>.</span>
+                    <a href="#" class="text-white-50 footer">Terms</a>
+                    <span>.</span>
+                    <a href="#" class="text-white-50 footer">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- <script>
+        // Tüm bağlantılar için event listener ekle
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(function (link) {
+          link.addEventListener('click', function () {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+              bootstrap.Collapse.getInstance(navbarCollapse).hide();
+            }
+          });
+        });
+      </script> -->
+    
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
